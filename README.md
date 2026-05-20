@@ -1,0 +1,2 @@
+# Nightcode
+Claude code clone
