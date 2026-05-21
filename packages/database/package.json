@@ -1,0 +1,22 @@
+{
+  "name": "@nightcode/database",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts"
+  },
+  "scripts": {
+    "db:generate": "prisma generate --schema=prisma/schema.prisma",
+    "db:push": "prisma db push --schema=prisma/schema.prisma",
+    "db:migrate": "prisma migrate dev --schema=prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^6.5.0",
+    "@prisma/client": "^6.5.0",
+    "dotenv": "^17.4.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.5.0"
+  }
+}
